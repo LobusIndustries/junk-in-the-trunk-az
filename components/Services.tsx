@@ -4,42 +4,43 @@ const services = [
   {
     title: "Furniture Removal",
     desc: "Couches, beds, dressers, tables — we haul it all, no matter the size or weight.",
+    // Green sofa — clearly furniture
     img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Appliance Removal",
     desc: "Refrigerators, washers, dryers, stoves. We disconnect and remove safely.",
-    img: "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=600&q=80",
+    img: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Construction Debris",
     desc: "Drywall, lumber, tiles, roofing shingles. Post-renovation cleanup made easy.",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+    img: "https://images.unsplash.com/photo-1616551569669-b60598758c4f?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Estate Cleanouts",
     desc: "Clearing a home after a move, sale, or loss. Fast, respectful, thorough.",
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+    img: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Garage Cleanouts",
     desc: "Years of accumulated clutter gone in one visit. We'll clear it so you can use your garage again.",
-    img: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=600&q=80",
+    img: "https://images.unsplash.com/photo-1635108198322-18c814f9b70f?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Yard Waste & Debris",
     desc: "Branches, rocks, dirt, old lumber — full outdoor cleanup from front to back yard.",
-    img: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
+    img: "https://images.unsplash.com/photo-1769340051050-3caa4e4b5baf?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Hot Tub Removal",
     desc: "We break down and haul away old hot tubs, spas, and pool equipment.",
-    img: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=600&q=80",
+    img: "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Office Cleanouts",
     desc: "Old desks, chairs, electronics, and filing cabinets removed from any commercial space.",
-    img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80",
+    img: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=600&q=80",
   },
 ];
 
