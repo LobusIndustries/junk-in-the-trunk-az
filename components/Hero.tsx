@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-black">
       {/* Background photo */}
       <Image
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1800&q=80"
+        src="https://images.unsplash.com/photo-1781425009053-2baffa997d8c?auto=format&fit=crop&w=1800&q=80"
         alt="Junk removal team at work"
         fill
         className="object-cover opacity-35"
