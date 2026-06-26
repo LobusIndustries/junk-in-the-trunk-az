@@ -1,70 +1,85 @@
+import Image from "next/image";
+
 const services = [
   {
-    icon: "🛋️",
     title: "Furniture Removal",
-    desc: "Couches, beds, dressers, tables, chairs — we haul it all, no matter how heavy.",
+    desc: "Couches, beds, dressers, tables — we haul it all, no matter the size or weight.",
+    img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80",
   },
   {
-    icon: "🏠",
     title: "Appliance Removal",
-    desc: "Refrigerators, washers, dryers, stoves, dishwashers. We do the heavy lifting.",
+    desc: "Refrigerators, washers, dryers, stoves. We disconnect and remove safely.",
+    img: "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=600&q=80",
   },
   {
-    icon: "🏗️",
     title: "Construction Debris",
-    desc: "Drywall, lumber, tiles, flooring, roofing shingles — post-renovation cleanups made easy.",
+    desc: "Drywall, lumber, tiles, roofing shingles. Post-renovation cleanup made easy.",
+    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
   },
   {
-    icon: "📦",
     title: "Estate Cleanouts",
-    desc: "Clearing out a home after a move, sale, or loss. We handle it quickly and respectfully.",
+    desc: "Clearing a home after a move, sale, or loss. Fast, respectful, thorough.",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
   },
   {
-    icon: "🌿",
-    title: "Yard Waste & Debris",
-    desc: "Tree branches, old lumber, dirt, rocks, and general outdoor cleanup.",
-  },
-  {
-    icon: "🏢",
-    title: "Office & Commercial",
-    desc: "Old desks, chairs, electronics, filing cabinets, and office equipment removed fast.",
-  },
-  {
-    icon: "🗑️",
     title: "Garage Cleanouts",
-    desc: "Years of accumulated clutter? We'll clear your garage so you can actually use it again.",
+    desc: "Years of accumulated clutter gone in one visit. We'll clear it so you can use your garage again.",
+    img: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=600&q=80",
   },
   {
-    icon: "🛁",
-    title: "Hot Tub & Spa Removal",
-    desc: "We break down and remove old hot tubs, spas, and pool equipment safely.",
+    title: "Yard Waste & Debris",
+    desc: "Branches, rocks, dirt, old lumber — full outdoor cleanup from front to back yard.",
+    img: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    title: "Hot Tub Removal",
+    desc: "We break down and haul away old hot tubs, spas, and pool equipment.",
+    img: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    title: "Office Cleanouts",
+    desc: "Old desks, chairs, electronics, and filing cabinets removed from any commercial space.",
+    img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="bg-white py-20 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-3">
-            We Haul <span className="text-orange-500">Everything</span>
-          </h2>
-          <p className="text-gray-500 text-lg max-w-xl mx-auto">
-            If you can point at it, we can haul it. No job too big or too small.
+    <section id="services" className="bg-zinc-950 py-24 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
+          <div>
+            <p className="text-orange-500 font-semibold text-sm uppercase tracking-widest mb-3">What We Haul</p>
+            <h2 className="font-display text-5xl md:text-6xl font-bold text-white leading-tight">
+              NO JOB<br />TOO BIG.
+            </h2>
+          </div>
+          <p className="text-gray-400 text-lg max-w-sm md:text-right">
+            If you can point at it, we can haul it. Residential, commercial, or anything in between.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((s) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {services.map((s, i) => (
             <div
               key={s.title}
-              className="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-md hover:border-orange-200 transition-all group"
+              className={`group relative overflow-hidden rounded-xl bg-zinc-900 ${i === 0 ? "sm:col-span-2 sm:row-span-2" : ""}`}
             >
-              <div className="text-4xl mb-3">{s.icon}</div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2 group-hover:text-orange-500 transition-colors">
-                {s.title}
-              </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
+              <div className={`relative w-full overflow-hidden ${i === 0 ? "h-80 sm:h-full min-h-64" : "h-48"}`}>
+                <Image
+                  src={s.img}
+                  alt={s.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-70"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <h3 className="font-display text-white font-bold text-xl mb-1 group-hover:text-orange-400 transition-colors">
+                  {s.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
+              </div>
             </div>
           ))}
         </div>
