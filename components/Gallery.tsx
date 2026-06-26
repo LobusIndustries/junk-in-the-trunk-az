@@ -2,33 +2,39 @@ import Image from "next/image";
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80",
-    alt: "Team hauling furniture",
+    // Verified: "People unloading furniture from a moving truck outdoors"
+    src: "https://images.unsplash.com/photo-1776885008664-68b2988373e6?auto=format&fit=crop&w=800&q=80",
+    alt: "Team unloading furniture from truck",
     caption: "Full furniture removal, Gilbert AZ",
   },
   {
-    src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
-    alt: "Construction debris cleanup",
-    caption: "Post-renovation cleanout, Mesa AZ",
+    // Verified: "Workers load trash into a garbage truck on a street"
+    src: "https://images.unsplash.com/photo-1762805543729-361d38e78a37?auto=format&fit=crop&w=800&q=80",
+    alt: "Workers loading junk into truck",
+    caption: "Full truckload haul, Mesa AZ",
   },
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
-    alt: "Full truckload of junk",
-    caption: "Estate cleanout, Chandler AZ",
+    // Verified: "a garage filled with lots of clutter and tools"
+    src: "https://images.unsplash.com/photo-1635108198854-26645ffe6714?auto=format&fit=crop&w=800&q=80",
+    alt: "Cluttered garage before cleanout",
+    caption: "Before: garage cleanout, Chandler AZ",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-    alt: "Clean garage after removal",
-    caption: "Before & after garage cleanout",
+    // Verified: "A garage filled with lots of different types of items"
+    src: "https://images.unsplash.com/photo-1726929219819-b90904f9d329?auto=format&fit=crop&w=800&q=80",
+    alt: "Garage packed with junk and items",
+    caption: "Estate cleanout, Queen Creek AZ",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80",
-    alt: "Clean space after junk removal",
-    caption: "Cleared and clean — Queen Creek AZ",
+    // Verified: "Workers loading trash onto trucks near a building"
+    src: "https://images.unsplash.com/photo-1762805543693-5aaa00fadc28?auto=format&fit=crop&w=800&q=80",
+    alt: "Crew hauling trash to truck",
+    caption: "Commercial cleanout, Mesa AZ",
   },
   {
-    src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80",
-    alt: "Yard waste cleanup",
+    // Verified: "A large pile of garbage sitting next to a metal fence"
+    src: "https://images.unsplash.com/photo-1721622248626-e7b5c29de4b2?auto=format&fit=crop&w=800&q=80",
+    alt: "Large pile of junk and debris",
     caption: "Yard debris removal, Gilbert AZ",
   },
 ];
